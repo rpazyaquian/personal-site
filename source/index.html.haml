@@ -1,0 +1,87 @@
+---
+title: HI HELLO
+---
+
+%h1
+	= current_page.data.title
+%section
+	%h2 Section 1
+	%p
+		Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+	%aside
+		An aside: this random, gibberish text is known as "Lorem Ipsum" and is basically placeholder type.
+	%p
+		All work and no play makes Rebecca a dull girl. All work and no play makes Rebecca a dull girl. All work and no play makes Rebecca a dull girl. All work and no play makes Rebecca a dull girl. All work and no play makes Rebecca a dull girl. All work and no play makes Rebecca a dull girl.
+	%aside
+		Remember to break large portions of code up with newlines and indentation!
+	%p
+		Oh, actually, there's a tool in Middleman that helps you produce LI text, like this:
+		= lorem.paragraphs 5
+	%p You can also do images!
+	= image_tag lorem.image('300x400').to_s
+	%aside
+		^ Thanks,
+		= link_to "Frank!", "https://github.com/blahed/frank"
+%section
+	%h2 Section 2
+	%p whutevs cuz. here a list
+	%ol
+		-(0..9).each do 
+			%li Heh.
+%section
+	%h2 References I Like
+	%ol
+		%li
+			= link_to "Scalable and Modular Architecture in CSS", "http://smacss.com/book/"
+			%p A guide to modular organization and architecture of CSS. If you've ever been confused on whether to use a child selector or not, whether to use an ID or give something a class instead, and other CSS questions, this is a good place to get answers.
+		%li
+			= link_to "Eloquent Javascript", "http://eloquentjavascript.net/"
+		%li
+			= link_to "Javascript Garden", "http://bonsaiden.github.io/JavaScript-Garden/"
+%section
+	%h2 What I've Done
+	%ul
+		%li
+			Menuat
+			%ul
+				%li
+					My role was as the developer on the website, writing code, markup, styles, etc. to translate design documents into an actual website. The site is based on a basic Rails backend and primarily static.
+				%li
+					Wrote the HTML and CSS.
+				%li
+					Used and modified Foundation.
+				%li
+					Worked with Sean and Mike on details, assets.
+		%li
+			Kyn Exchange (which hasn't quite gotten to my part yet...)
+		%li
+			!? (holy crap, I need to do more. find some personal projects)
+%section
+	%h2 My Blog
+	%article
+		%h3 First Post
+		%p Yes, I'm writing a blog post in raw HTML without a CMS or anything. I know. :( I'll try and roll something nicer at some point.
+		%p By the way, would a bunch of blog posts be considered a list?
+		%time{ datetime: Date.today.to_s }
+			= Date.today.to_s 
+	%article
+		%h3 Idea!
+		%p Maybe I should make it so all blog posts are written in Markdown, and I can just include them all and have them be translated into HTML from there? I'd have to wrap them in an article tag or something, just so I know what's going on. But, it'll make it easier to write. Hmmm... So, it'd be this list of steps:
+		%ol
+			%li
+				Create a basic blog layout.
+			%li
+				Say "okay, everything in this div or whatever is a blog post, and everything in here is a Markdown document"
+			%li
+				Put "= partial "blogpost.md"" actually wait no, it's not a partial cause it's not used site-wide. Uhhhh what's the other way of doing that? Nested layouts? Okay, do that.
+			%li
+				Write all my posts in Markdown, which is way easier and something I can just do from the Github repo page!
+%section
+	%h2 What will this site be structured like?
+	%p
+		I'm imagining something like this:
+		%ul
+			%li A blog page, with index page, and individual post pages.
+			%li A resume/projects page, with details on what I've done with my life (not a whole lot).
+			%li An "interesting resources" page, like I have up there.
+			%li What else...?
