@@ -14,4 +14,30 @@
 	// if you have a model named User, for example,
 	// its matching collection would be Users.
 
+	// you then typically want a view of that model,
+	// and a view for that collection.
+	// i.e., "what does an item look like?"
+	// and "what does a collection of items look like?"
+
+	// so each model has a view.
+	// each controller has a view.
+
+	// lets try implementing this.
+	// let's try...users.
+
+	// declare User model.
+	var User = Backbone.Model.extend({
+		defaults: {
+			username: "admin",
+			password: "password"
+		}
+	});
+
+	// declare User collection, Users.
+	var Users = Backbone.Collection.extend({
+		model: User  // Users is a Collection of User models. <collection name> is a Collection of <model name> models.
+	});
+
+	
+
 })($);
