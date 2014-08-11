@@ -19,5 +19,10 @@ title: Frontend Toys
 
 %section#backbone-actions
 	%h2 Backbone - Actions
-	%div{class: "actions-display"}
-	%input{type: "submit", id: "actions-add", class: "actions-add", value: "Add a new whatever!!"}
+	%div.actions-display
+	%input#actions-add.actions-add{type: "submit", value: "Add a new whatever!!"}
+
+%section#backbone-todo
+	%h2 Developing Backbone Applications - Todo
+	%div#todo-element
+	= javascript_include_tag 'frontend/templates/todo', {id: 'item-template', type: 'text/template'}

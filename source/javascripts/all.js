@@ -1,4 +1,4 @@
 //= require 'jquery'
 //= require 'underscore'
 //= require 'backbone'
-//= require 'frontend/all'
+//= require 'frontend/apps/all'
