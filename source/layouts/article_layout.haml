@@ -1,3 +1,5 @@
 = wrap_layout :blog_layout do
 	%article.blog-post
 		= yield
+		%time{ datetime: Date.today.to_s }
+			= Date.today.to_s

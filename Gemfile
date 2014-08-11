@@ -15,3 +15,4 @@ gem "tzinfo-data", platforms: [:mswin, :mingw]
 
 # Backbone gem for Backbone frontend toys
 gem "rails-backbone", require: false
+gem 'jquery-rails', require: false

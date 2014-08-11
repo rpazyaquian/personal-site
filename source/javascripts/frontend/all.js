@@ -1,1 +1,1 @@
-//= require './_backbone-echo'
+//= require_tree
