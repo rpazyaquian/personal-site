@@ -7,11 +7,16 @@ var Todo = Backbone.Model.extend({
 	}
 });
 
-// instantiate the model, oh okay
+var TodosCollection = Backbone.Collection.extend({
+	model: Todo
+});
 
 var myTodo = new Todo({
-	title: 'New Todo'
+	title: 'New Todo',
+	id: 2
 });
+
+var todos = new TodosCollection([myTodo]);
 
 var TodoView = Backbone.View.extend({
 	tagName: 'li',
@@ -29,7 +34,7 @@ var TodoView = Backbone.View.extend({
 	// initializer
 	initialize: function() {
 		_.bindAll(this, 'render', 'edit', 'close', 'updateOnEnter');
-		this.$el = $('#todo');  // the element associated with the entire application
+		this.$el = $('#todo-element');  // the element associated with the entire application. please don't forget to add this. again.
 		this.render();
 	},
 

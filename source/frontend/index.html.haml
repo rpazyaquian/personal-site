@@ -4,6 +4,8 @@ title: Frontend Toys
 
 %h1 Frontend Stuff!
 
+=link_to "Click here for the Backbone version of TodoMVC.", './todomvc.html'
+
 %section#backbone-echo
 	%h2 Backbone - Echo
 	%input{type: "text", class: "echo-input", placeholder: "Type something into me!"}
@@ -25,4 +27,12 @@ title: Frontend Toys
 %section#backbone-todo
 	%h2 Developing Backbone Applications - Todo
 	%div#todo-element
-	= javascript_include_tag 'frontend/templates/todo', {id: 'item-template', type: 'text/template'}
+	%script{id: 'item-template', type: 'text/template'}
+		<div>
+		<input id="todo_complete" type="checkbox" <%= completed ? 'checked="checked"' : '' %> />
+		<%= title %>
+		</div>
+
+%section#backbone-sandbox
+	%h2 Backbone - Sandbox
+	%div#sandbox-element
