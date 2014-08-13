@@ -12,7 +12,7 @@ app.Todo = Backbone.Model.extend({  // namespacing!
 	defaults: {
 		title: '',  // should be self-explanatory by now
 		completed: false
-	}
+	},
 
 	// add a 'toggle' function to the data model (why is this on the data model?)
 	// hmm maybe it's so i can do like when button clicked --> `myTodo.toggle()`
