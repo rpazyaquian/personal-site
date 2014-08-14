@@ -18,6 +18,40 @@ How about an Energy model? It might be another component of a Mood Entry where y
 
 I also need to think about defining behavior. Let me figure that out once I've implemented a view/template, though.
 
+## WUH OH
+
+I may need to rethink my approach. Does a Mood really deserve a model of its own? Do I really have a need to store each Mood every user makes in its own database? Can't I just iterate over each Mood Entry and say, "get me the mood and the intensity from X date to Y date"?
+
+In fact, what ARE moods?
+
+Okay, a mood is a particular emotional state.
+A mood has a "what" (happy, angry, sad), and a "how much"(very, somewhat, a little).
+I think I can do something like, the description of an entry describes the "what", and the mood intensity describes the "how much".
+
+I think I'm getting too abstract with defining a mood. For now, I'm going to stay simple:
+
+A Mood Journal has many Mood Entries.
+A Mood Entry has a description, a datetime, and a mood intensity.
+The description is "What are you feeling?"
+The intensity is "How intense is this feeling?"
+The intensity scale would basically be "how do you feel on a scale of 1 to 10?"
+I'm not sure if this would be "Bad: 1, Good: 10" or something.
+
+So a sample mood entry would be:
+
+"I'm sick of my parents bugging me!"
+Mood: 2
+
+...does that make any sense?
+Here's the thing: regardless of whether you're jumpy, lethargic, or pissy, if you feel bad, you feel bad.
+So, should the scale focus on determining whether your mood is pleasant or unpleasant?
+
+All I want to know is, sometimes I feel like shit, and sometimes I feel pretty great. I like feeling pretty great, and I do not like feeling like shit. I want to know what makes me feel like shit so I can avoid it, and what makes me feel pretty great so I can do more of that. I think that if I can record my thoughts alongside whether I feel pretty great or like shit, then I can identify what makes me feel pretty great or like shit.
+
+In that case, do I even need a graph?
+
+What is this tool even FOR?
+
 ---
 
 # Gems I'll Need
@@ -59,6 +93,10 @@ User:
 has_a username String
 has_a passwordhash String
 has_a MoodJournal
+
+## WUH OH 2
+
+Hey, should I really be making individual Mood/Energy models? Should they 
 
 -----
 
