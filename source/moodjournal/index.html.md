@@ -10,4 +10,119 @@ As a way of becoming more familiar with MVC frameworks, I've decided to start a 
 
 A Mood Journal is a journal where you keep track of your feelings throughout each day. For example, you feel sad - so you write in your Mood Journal, "right now I feel sad.". That's a Mood Entry. A Mood Journal is a collection of all these Mood Entries.
 
-A Mood Entry itself is basically a short description, a date-time stamp, and a "Mood". The short description is a very short, ~140 character-limited blurb about how you curently feel.
+A Mood Entry itself is basically a short description, a date-time stamp, and a "Mood". The short description is a very short, ~140 character-limited blurb about how you curently feel. The date-time stamp is self-explanatory, it's a way of tracking how you felt at X time of day. The "Mood" is a little bit more complicated, and might merit its own model.
+
+What is a Mood? A Mood has a name, e.g. "happy", "sad", "angry". Maybe those might even be larger categories - you can feel "glad", "peaceful", "dreamy", which might all be variations of "happy". A Mood might also have an intensity or at least some sort of numerical value associated with it - a sort of "strength" of how strongly you felt that emotion at that point in time. Maybe a Mood has a color, too? Is that color related to categories?
+
+How about an Energy model? It might be another component of a Mood Entry where you can also keep track of your energy level throughout a day, week, month, etc. This could be a flat numerical scale - "I feel exhausted, I'm like a 1 on energy".
+
+
+-----
+
+mood journal? you make entries every so often (either at will or at intervals) and you can bring up your past stuff on like, a graph or some other visual display
+mood journal huh
+so it's like a blog, but with statistics?
+and you can be like, "oh my mood is like a 7 today"
+
+Yeah
+
+or you can choose from preset moods (happy, sad, etc), or fill in your own
+
+you could use a numerical ranking system or something color-based or etc
+hmmmm
+
+regarding a journal part, my suggestion would be to keep it short. You've got, idk, 240 characters to sum up how you feel at this minute/hour/day/etfc
+
+-f
+so a mood journal would consist of multiple mood entries
+?
+and for a mood entry
+
+it'd consist of a mood and a description
+you have, let's say, a body - the 240 character limit - the mood (on a scale like you mentioned?), and the date and time
+ok
+
+and i guess yeah the date and time
+like im thinking of this in terms of data models
+
+It'd be like, if Twitter had the function that facebook has where you can tag how you're feeling or hwat you're eating or etc
+
+aye, yeah, that's the impression i got 
+rite
+cause thats how everything works
+and im fucked if i dont start from the ground up D:
+so the pieces of the mood journal would be
+1. your MoodJournal, which is basically: an array of MoodEntries
+2. a MoodEntry, which has the following fields:
+
+datetime, mood, "explanation"/"description"/whateverothertermyouwannause
+1) a text area for current mood and feelings, 2) a mood, which might be a data model of its own, 3) a datetime
+right
+what is a mood?
+like, what would its structure be
+i know what a mood is 
+like, a mood would have a name - "happy" or "sad" or "angry"
+but we want statistics, and we want to be able to chart it
+
+hm
+what exactly are we charting, though? highs and lows? how many times you felt sad in a day, how many times you felt happy?
+
+it's up to you but
+rite rite
+you have good ideas tho, i figured id bounce it off of you
+
+maybe a name, a color (actually maybe not b/c colorblind idk)
+
+as well as a general feeling?
+
+so you might be feeling tired but happy
+
+or you might be excited about a concert but still feeling down
+
+or maybe you could rank like,
+
+have a mood scale, and an energy scale, and etc
+hmmmm
+
+so im feeling good but worn out
+
+energy vs. mood sounds interesting
+
+or im feeling ok but im zooming around the house
+there might be other relevant "scales" that aren't coming to my mind
+
+what do you think this mood journal could help with?
+like, what would you want out of a mood journal?
+
+Keeping track of your mood can be really important in terms of understanding what makes you feel good and what doesn't, keeping tabs on mental/emotional problems,
+
+It's also really nice to look back through recent times where you were feeling great if you need a pick-me-up
+
+right
+so i can look back and be like, huh. i was feeling pretty good for a couple days, but now that it's monday, my mood has tanked.
+
+yeah
+
+and the microblogs/whatever could shed some light on why you're feeling that way
+
+plus you could set it up so that it polls you every hour or two hours or whatever, only during certain parts of the day, etc
+
+hmm, iunno about being kept to a schedule. the thing about twitter and social media is that its freeform and entirely self-directed.
+
+yeah but it's also nice to have reminders
+like: you may not like the idea, but some would find it useful
+
+for me, not having it could very well mean i never remember to plot my moods, or only do so when i'm feeling especially moody
+skewing the results
+
+thats a good point
+okay, i can add that as an option
+this mood journal can also poll you at a specific (or random!) time to ask you how you're feeling, in order to get unbiased sampling.
+alright, that's some cool behavior
+
+yeah
+how am i feeling at the end of my school/work day
+how am i feeling at the start
+how am i feeling randomly
+
+cool. these times can be set, or random, im guessing?
