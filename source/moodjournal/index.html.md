@@ -14,9 +14,22 @@ A Mood Entry itself is basically a short description, a date-time stamp, and a "
 
 What is a Mood? A Mood has a name, e.g. "happy", "sad", "angry". Maybe those might even be larger categories - you can feel "glad", "peaceful", "dreamy", which might all be variations of "happy". A Mood might also have an intensity or at least some sort of numerical value associated with it - a sort of "strength" of how strongly you felt that emotion at that point in time. Maybe a Mood has a color, too? Is that color related to categories?
 
-How about an Energy model? It might be another component of a Mood Entry where you can also keep track of your energy level throughout a day, week, month, etc. This could be a flat numerical scale - "I feel exhausted, I'm like a 1 on energy". Or maybe that should be a property tied to Mood Entry? Since all I can really think of is an integer to represent it.
+How about an Energy model? It might be another component of a Mood Entry where you can also keep track of your energy level throughout a day, week, month, etc. This could be a flat numerical scale - "I feel exhausted, I'm like a 1 on energy". Or maybe that should be a property tied to Mood Entry? Since all I can really think of is an integer to represent it. Hmmm...yeah, maybe I'll make an Energy model too.
+
+I also need to think about defining behavior. Let me figure that out once I've implemented a view/template, though.
 
 ---
+
+# Gems I'll Need
+
+Devise
+Haml-Rails (or maybe slim?)
+Ember-Rails (what's the deal with the ember:install and all that?)
+Emblem-Rails (for Ember templates)
+
+---
+
+# Defining Models
 
 So, for now, let's define our top three models:
 
@@ -28,14 +41,18 @@ MoodEntry:
 has_a description String (charlimit: 140-240?)
 has_a datetime Datetime
 has_a Mood
+has_an Energy
 
 Mood:
+has_a name String(? or will we be going by categories?)
+has_an intensity Integer
+
+Energy:
 has_a name String
 has_an intensity Integer
 
 We will also have to define Users.
-This implies implementing a User model,
-as well as Sessions!
+This implies implementing a User model, as well as Sessions!
 Maybe I'll use Devise?
 
 User:
@@ -44,6 +61,8 @@ has_a passwordhash String
 has_a MoodJournal
 
 -----
+
+# Notes and Conversations
 
 mood journal? you make entries every so often (either at will or at intervals) and you can bring up your past stuff on like, a graph or some other visual display
 
