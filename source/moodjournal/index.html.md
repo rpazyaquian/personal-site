@@ -14,30 +14,55 @@ A Mood Entry itself is basically a short description, a date-time stamp, and a "
 
 What is a Mood? A Mood has a name, e.g. "happy", "sad", "angry". Maybe those might even be larger categories - you can feel "glad", "peaceful", "dreamy", which might all be variations of "happy". A Mood might also have an intensity or at least some sort of numerical value associated with it - a sort of "strength" of how strongly you felt that emotion at that point in time. Maybe a Mood has a color, too? Is that color related to categories?
 
-How about an Energy model? It might be another component of a Mood Entry where you can also keep track of your energy level throughout a day, week, month, etc. This could be a flat numerical scale - "I feel exhausted, I'm like a 1 on energy".
+How about an Energy model? It might be another component of a Mood Entry where you can also keep track of your energy level throughout a day, week, month, etc. This could be a flat numerical scale - "I feel exhausted, I'm like a 1 on energy". Or maybe that should be a property tied to Mood Entry? Since all I can really think of is an integer to represent it.
 
+---
+
+So, for now, let's define our top three models:
+
+MoodJournal:
+has_many MoodEntry
+belongs_to User
+
+MoodEntry:
+has_a description String (charlimit: 140-240?)
+has_a datetime Datetime
+has_a Mood
+
+Mood:
+has_a name String
+has_an intensity Integer
+
+We will also have to define Users.
+This implies implementing a User model,
+as well as Sessions!
+Maybe I'll use Devise?
+
+User:
+has_a username String
+has_a passwordhash String
+has_a MoodJournal
 
 -----
 
 mood journal? you make entries every so often (either at will or at intervals) and you can bring up your past stuff on like, a graph or some other visual display
+
 mood journal huh
 so it's like a blog, but with statistics?
 and you can be like, "oh my mood is like a 7 today"
 
 Yeah
-
 or you can choose from preset moods (happy, sad, etc), or fill in your own
-
 you could use a numerical ranking system or something color-based or etc
+
 hmmmm
 
 regarding a journal part, my suggestion would be to keep it short. You've got, idk, 240 characters to sum up how you feel at this minute/hour/day/etfc
-
 -f
+
 so a mood journal would consist of multiple mood entries
 ?
 and for a mood entry
-
 it'd consist of a mood and a description
 you have, let's say, a body - the 240 character limit - the mood (on a scale like you mentioned?), and the date and time
 ok
