@@ -13,13 +13,13 @@
 
 Received training and education on Rails back-end development and general Javascript front-end development, and contributed to development of client and company projects.
 
-#### Menuat
+#### Menuat Website
 
-My role was as the developer on the website, writing code, markup, styles, etc. to translate design documents into an actual website. The site is based on a basic Rails backend and is primarily static.
+Head developer on a primarily static, mobile-safe responsive [web page](http://www.menuat.com) for Menuat.
 
 * Built a Rails backend to facilitate creating partials, serving assets, and hosting on Heroku
 * Interpreted and wrote the markup and styling for the site based on design documents and style guides
-* Heavily customized the [Foundation framework](http://foundation.zurb.com/) for a personalized responsive experience
+* Heavily customized the [Foundation framework](http://foundation.zurb.com/) for a personalized, responsive experience
 * Collaborated with head designers on implementation and reworking of site design
 
 ## Technical Skills
@@ -29,6 +29,7 @@ My role was as the developer on the website, writing code, markup, styles, etc. 
 * Python, Flask, Django
 * Ruby, Rails
 * Javascript, Backbone, Ember
+* Foundation, Bootstrap
 
 ## Personal Projects
 
