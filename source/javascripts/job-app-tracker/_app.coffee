@@ -1,5 +1,8 @@
 $ ->
 
+	# OKAY
+
+	# so right now, i've managed to get it to delete a new app.
 
 
 	# define the models
@@ -26,12 +29,11 @@ $ ->
 
 	# define the views
 
+
 	# model's view
 
 	class JobAppView extends Backbone.View
 
-		# identify the TOP LEVEL element a JobApp is associated with
-		# (each Job App spawns within a table row)
 		tagName: 'tr'
 
 		# don't forget to initialize.
@@ -58,13 +60,36 @@ $ ->
 		unrender: ->
 			$(@el).remove()
 
-
 		remove: ->
 			@model.destroy()
 
 		events: ->
 			# 'click .edit': 'edit'
 			'click .delete': 'remove'
+
+
+	# model's edit view
+
+	class JobAppEditView extends Backbone.View
+
+		tagName: 'tr',
+
+		initialize: ->
+			_.bindAll(@)
+
+		render: ->
+
+			$(@el).append("
+			<td><input type='text'>#{@model.get 'title'}</input></td>
+			<td><input type='text'>#{@model.get 'description'}</input></td>
+			<td><input type='text'>#{@model.get 'company'}</input></td>
+			<td><input type='text'>#{@model.get 'date'}</input></td>
+			<td class='save'>save</td>
+			<td class='delete'>delete</td>
+			")
+
+			@
+
 
 	# collection's view
 
@@ -114,6 +139,14 @@ $ ->
 			@collection.add jobApp
 
 		events: 'click button': 'addJobApp'
+
+
+
+	# app setup.
+
+	Backbone.sync = (method, model, success, error) ->
+
+		success()
 
 	# instatiate the view.
 
