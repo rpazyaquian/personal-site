@@ -86,5 +86,6 @@ end
 
 activate :directory_indexes
 
-# activate :ember
-# activate :emberscript, emblem_ext: "em"
+# Heroku
+
+set :build_dir, "tmp"

@@ -2,6 +2,9 @@
 # the following line to use "https"
 source 'http://rubygems.org'
 
+# Ruby version
+ruby "2.0.0"
+
 gem "middleman", "~>3.3.3"
 
 # Live-reloading plugin
@@ -17,8 +20,7 @@ gem "tzinfo-data", platforms: [:mswin, :mingw]
 gem "rails-backbone", require: false
 gem 'jquery-rails', require: false
 
-# # Ember 
-# gem "ember-middleman"
-# gem "ember-source"
-# gem "middleman-emblem"
-# gem "middleman-emberscript"
+# Heroku-specific
+
+gem "rack-contrib"
+gem "puma"

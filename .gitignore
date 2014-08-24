@@ -9,6 +9,8 @@
 
 # Ignore the build directory
 /build
+# Heroku version
+/tmp
 
 # Ignore cache
 /.sass-cache
