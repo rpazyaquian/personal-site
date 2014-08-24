@@ -39,5 +39,3 @@ I will need Ember to implement my Tracker application, so I will naturally need 
 ## Other
 
 Maybe I'll just have the application controller handle the static pages.
-
-hmm. now im not sure about this website. maybe i should stick with retrocombine....
