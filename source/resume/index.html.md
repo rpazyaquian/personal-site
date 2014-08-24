@@ -1,4 +1,5 @@
 # Rebecca Paz
+
 1. 177 Linkside Circle
 2. Ponte Vedra Beach, FL 32082
 3. (904)-540-5017
@@ -7,7 +8,7 @@
 
 ## Work Experience
 
-### Developer Apprentice, June 2014
+### Developer Apprentice, June 2014 - August 2014
 
 *KYN, Jacksonville, FL*
 
@@ -24,10 +25,12 @@ Head developer on a primarily static, mobile-safe responsive [web page](http://w
 
 ## Technical Skills
 
-### Software and Programming
+### Back-End Development
 
 * Python, Flask, Django
 * Ruby, Rails
+
+### Front-End Development
 * Javascript, Backbone, Ember
 * Foundation, Bootstrap
 

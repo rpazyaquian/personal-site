@@ -82,4 +82,9 @@ configure :build do
   # set :http_prefix, "/Content/images/"
 end
 
+# Activating plugins n such
+
 activate :directory_indexes
+
+# activate :ember
+# activate :emberscript, emblem_ext: "em"

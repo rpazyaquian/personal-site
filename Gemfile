@@ -13,6 +13,12 @@ gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
 # Windows does not come with time zone data
 gem "tzinfo-data", platforms: [:mswin, :mingw]
 
-# Backbone gem for Backbone frontend toys
+# Backbone
 gem "rails-backbone", require: false
 gem 'jquery-rails', require: false
+
+# # Ember 
+# gem "ember-middleman"
+# gem "ember-source"
+# gem "middleman-emblem"
+# gem "middleman-emberscript"
