@@ -11,5 +11,6 @@
 
   %body
     = render_partial 'header'
-    = yield
+    %div#content
+      = yield
     = render_partial 'footer'

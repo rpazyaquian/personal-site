@@ -1,15 +1,10 @@
 # Rebecca Paz
 
-1. 177 Linkside Circle
-2. Ponte Vedra Beach, FL 32082
-3. (904)-540-5017
-4. r.pazyaquian@gmail.com
-5. [Github](https://github.com/rpazyaquian)
+[![Github](/images/GitHub-Mark-64px.png)](https://github.com/rpazyaquian)
 
 ## Work Experience
 
 ### Developer Apprentice, June 2014 - August 2014
-
 *KYN, Jacksonville, FL*
 
 Received training and education on Rails back-end development and general Javascript front-end development, and contributed to development of client and company projects.
