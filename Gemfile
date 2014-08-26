@@ -21,6 +21,5 @@ gem "rails-backbone", require: false
 gem 'jquery-rails', require: false
 
 # Heroku-specific
-
 gem "rack-contrib"
 gem "puma"

@@ -72,7 +72,7 @@ $ ->
 
 	class JobAppEditView extends Backbone.View
 
-		tagName: 'tr',
+		tagName: 'tr'
 
 		initialize: ->
 			_.bindAll(@)
@@ -119,7 +119,7 @@ $ ->
 			# 			%th Date Submitted
 			# 	%button Add New Job App
 
-			$(@el).append "<table><tr><th>Job Title</th><th>Job Description</th><th>Company</th><th>Date Submitted</th></tr></table>"
+			$(@el).append "<table class='tracker-display'><tr><th>Job Title</th><th>Job Description</th><th>Company</th><th>Date Submitted</th></tr></table>"
 			$(@el).append "<button>Add New Job App</button>"
 
 

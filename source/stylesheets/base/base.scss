@@ -1,11 +1,27 @@
 // Fonts
-
 @import url("http://fonts.googleapis.com/css?family=Open+Sans");
+
 $open-sans: "Open Sans", sans-serif;
+$site-width: 800px;
+
+$link-color: #008cba;
+$link-color-hover: #007ba0;
 
 // Main
 
 body {
 	font-family: $open-sans;
 	background-color: #eee;
+	padding: 0 20px;
+	margin: auto;
+	max-width: $site-width;
+
+	a {
+		text-decoration: none;
+		color: $link-color;
+		&:hover {
+			color: $link-color-hover;
+		}
+	}
+
 }

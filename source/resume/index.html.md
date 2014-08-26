@@ -1,7 +1,5 @@
 # Rebecca Paz
 
-[![Github](/images/GitHub-Mark-64px.png)](https://github.com/rpazyaquian)
-
 ## Work Experience
 
 ### Developer Apprentice, June 2014 - August 2014

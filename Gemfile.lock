@@ -88,7 +88,7 @@ GEM
       middleman-core (>= 3.0.2)
       multi_json (~> 1.0)
       rack-livereload
-    middleman-sprockets (3.3.8)
+    middleman-sprockets (3.3.9)
       middleman-core (~> 3.3)
       sprockets (~> 2.12.1)
       sprockets-helpers (~> 1.1.0)

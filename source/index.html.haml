@@ -2,11 +2,13 @@
 title: Rebecca Paz
 ---
 
-%h1
-	= current_page.data.title
 %section
+	%h1
+		= current_page.data.title
+	%p
+		Hello!
 	%h2 References I Like
-	%ol
+	%ul
 		%li
 			= link_to "Scalable and Modular Architecture in CSS", "http://smacss.com/book/"
 		%li
@@ -15,3 +17,5 @@ title: Rebecca Paz
 			= link_to "Javascript Garden", "http://bonsaiden.github.io/JavaScript-Garden/"
 		%li
 			= link_to "Backbone Fundamentals", "http://addyosmani.github.io/backbone-fundamentals/"
+		%li
+			= link_to "Learn to Program", "https://pine.fm/LearnToProgram/"
