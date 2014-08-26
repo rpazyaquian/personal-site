@@ -1,18 +1,17 @@
-// Fonts
-@import url("http://fonts.googleapis.com/css?family=Open+Sans");
+@import "variables/typography";
 
-$open-sans: "Open Sans", sans-serif;
 $site-width: 800px;
-
-$link-color: #008cba;
-$link-color-hover: #007ba0;
 
 // Main
 
 body {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	font-family: $open-sans;
 	background-color: #eee;
-	padding: 0 20px;
+	padding: 0 50px;
 	margin: auto;
 	max-width: $site-width;
 
@@ -23,5 +22,7 @@ body {
 			color: $link-color-hover;
 		}
 	}
+
+	font-size: $font-size;
 
 }
