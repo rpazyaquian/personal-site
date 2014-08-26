@@ -11,7 +11,7 @@ $link-padding: 5px;
 			padding: $link-padding $link-padding;
 			border-radius: 3px;
 
-			transition: background-color 0.1s linear;
+			transition: background-color, color, 0.1s linear;
 
 			&:hover {
 				background-color: #aaa;
