@@ -15,21 +15,35 @@ $link-padding: 5px;
 
 			transition: background-color, color, 0.1s linear;
 
-			&:hover {
-				background-color: #aaa;
-				a {
-					color: #eee;
-				}
-			}
 			a {
 				text-decoration: none;
 				color: black;
+			}
+
+			&:hover {
+				background-color: #aaa;
+				a {
+					transition: color, 0.1s linear;
+					color: #eee;
+				}
 			}
 		}
 	}
 
 	i {
-		font-size: (2*$font-size);
+		font-size: 8vmax;
 	}
 
+}
+
+@media only screen and (max-width: 40em) {
+	.top-nav {
+		ul {
+			flex-flow: row wrap;
+			li {
+				min-width: 25%;
+				text-align: center;
+			}
+		}
+	}
 }
