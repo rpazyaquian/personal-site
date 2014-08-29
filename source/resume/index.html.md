@@ -1,3 +1,7 @@
+---
+title: Resume
+---
+
 # Rebecca Paz
 
 ## Work Experience

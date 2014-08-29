@@ -1,3 +1,7 @@
+---
+title: Portfolio
+---
+
 # Portfolio
 
 ## Professional Projects
