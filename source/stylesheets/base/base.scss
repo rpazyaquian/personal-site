@@ -1,4 +1,5 @@
 @import "variables/typography";
+@import "variables/media";
 
 $site-width: 800px;
 
@@ -25,7 +26,7 @@ body {
 
 	font-size: $font-size;
 
-	@media only screen and (max-width: 40em) {
+	@media only screen and (max-width: $small) {
 		font-size: $font-size-small;
 	}
 

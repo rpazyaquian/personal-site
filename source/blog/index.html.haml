@@ -5,6 +5,6 @@ title: Blog Index
 
 %ul
 	- sub_pages('blog').each do |resource|
-		- if resource.data.title != current_page.data.title
+		- if resource.data.title && resource.data.title != current_page.data.title
 			%li
 				= link_to resource.data.title, resource.url
