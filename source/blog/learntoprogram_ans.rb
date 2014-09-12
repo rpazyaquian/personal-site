@@ -30,6 +30,8 @@ puts "1,031,000,000 seconds is #{sec_to_year} years."
 # I could conceivably eat 168192000 chocolates in my entire life.
 # 1,031,000,000 seconds is 32 years.
 
+# 4.1
+
 puts "What is your first name?"
 first_name = gets.chomp
 puts "What is your middle name?"
@@ -40,3 +42,23 @@ puts "Hello, #{first_name} #{middle_name} #{last_name}."
 puts "What is your favorite number?"
 favorite_number = gets.chomp.to_i
 puts "Don't you think #{favorite_number+1} would be a better choice?"
+
+# 5.1
+
+def angry_boss
+	puts "WHAT IS IT?!?!"
+	message = gets.chomp
+	puts "WHADDAYA MEAN \"#{message.upcase}\"?!?  YOU'RE FIRED!!"
+end
+
+# 5.2
+
+angry_boss
+
+line_height = 40
+
+puts "Table of Contents".center line_height
+puts ""
+puts ("Chapter 1: Numbers".ljust line_height/2) + ("page 1".rjust line_height/2)
+puts ("Chapter 2: Letters".ljust line_height/2) + ("page 72".rjust line_height/2)
+puts ("Chapter 3: Variables".ljust line_height/2) + ("page 118".rjust line_height/2)
