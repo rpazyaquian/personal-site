@@ -3,7 +3,7 @@
 source 'http://rubygems.org'
 
 # Ruby version
-ruby "2.0.0"
+ruby "2.1.2"
 
 gem "middleman", "~>3.3.3"
 

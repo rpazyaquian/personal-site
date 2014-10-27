@@ -35,7 +35,3 @@ I will need Ember to implement my Tracker application, so I will naturally need 
 
 * Job Application
 	Includes a job title, job description, company, offering, date submitted, whether or not you have sent a thank-you letter. JobApps controller, JobApp model, jobapp resource. Wait, if I'm not implementing authentication, should I bother making a Rails controller, since I'm not gonna be using the database? In that case, should I make something that DOES use the database?
-
-## Other
-
-Maybe I'll just have the application controller handle the static pages.
