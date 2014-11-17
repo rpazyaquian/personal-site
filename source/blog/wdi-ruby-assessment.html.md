@@ -2,8 +2,6 @@
 title: WDI - Ruby Assessment
 ---
 
-# WDI - Ruby Assessment
-
 (Note: There's some weird formatting going on with the code blocks. I have no idea why this is happening.)
 
 ### Print out all the numbers from 1 to 100.
@@ -53,7 +51,7 @@ Answer:
 Answer:
 
 	# is this meant to be inclusive or exclusive (i.e. 1 to x-1, or 1 to x?)
-	
+
 	def fizzbuzz(x)
 		(1..x).each do |x|
 			if x % 3 == 0 and x % 5 == 0

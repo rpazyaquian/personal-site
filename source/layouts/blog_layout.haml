@@ -1,3 +1,4 @@
 = wrap_layout :layout do
-	%h1.blog-title My Blog
-	= yield
+  %h1.blog-title
+    = current_page.data.title
+  = yield

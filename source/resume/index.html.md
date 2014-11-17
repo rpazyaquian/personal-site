@@ -24,16 +24,16 @@ Head developer on a primarily static, mobile-safe responsive [web page](http://w
 
 ### Back-End Development
 
-* Python, Flask, Django
 * Ruby, Rails
+* Python, Flask, Django
 
 ### Front-End Development
-* Javascript, Backbone, Ember
+* Javascript, Backbone, Angular, Ember
 * Foundation, Bootstrap
 
 ## Personal Projects
 
-### Stock Chart Lookup 
+### Stock Chart Lookup
 
 Stock symbol lookup and chart renderer deployed via Heroku. Offers tabbed charts, search bar, and a set of technical indicators. Made in Flask, with charting supplied by [Bokeh](http://bokeh.pydata.org/).
 

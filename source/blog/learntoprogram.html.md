@@ -2,7 +2,6 @@
 title: Learn to Program - Exercises
 ---
 
-# Learn to Program - Exercises
 ([Code and Answers](/blog/learntoprogram_ans.rb))
 
 ## Ch. 1: Numbers
@@ -33,7 +32,7 @@ Answer:
 
 		# output
 	What is your first name?
-	> Rebecca    
+	> Rebecca
 	What is your middle name?
 
 	What is your last name?

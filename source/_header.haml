@@ -1,6 +1,6 @@
 %header#header
-	%nav.site-nav.top-nav
-		%ul
+	%nav.navbar.navbar-default
+		%ul.nav.navbar-nav
 			%li
 				= link_to "Home", "/"
 			%li
@@ -11,4 +11,9 @@
 				= link_to "Resume", "/resume"
 			%li
 				= link_to "Blog", "/blog"
-	%hr
+			%li
+				%a{href: "https://github.com/rpazyaquian"}
+					%i{class: "fa fa-github"}
+			%li
+				%a{href: "https://www.linkedin.com/pub/rebecca-paz/4a/711/b40"}
+					%i{class: "fa fa-linkedin"}

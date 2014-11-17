@@ -2,8 +2,6 @@
 title: WDI - CLI Assessment (OSX)
 ---
 
-# WDI - CLI Assessment (OSX)
-
 (Note: There's some weird formatting going on with the code blocks. I have no idea why this is happening.)
 
 ### Create a new directory.

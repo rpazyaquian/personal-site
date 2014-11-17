@@ -1,20 +1,3 @@
 // Import Base Styles
-@import "base/normalize";
-@import "base/base";
-// @import "base/all_your"
-
-// Import Layout Styles
-// @import "layout/grid"
-@import "layout/header";
-@import "layout/content";
-@import "layout/footer";
-
-// Import Module Styles
-// @import "modules/buttons"
-@import "modules/site-nav";
-@import "modules/tracker-display";
-@import "modules/prof-image";
-@import "modules/contact-info";
-
-// Import State Styles
-// @import "states/validation"
+@import "bootswatch-simplex";
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css";
