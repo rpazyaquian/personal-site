@@ -19,7 +19,7 @@ title: WDI - CLI Assessment (OSX)
 	rm filename.ext
 
 ### List all the contents of your home directory including hidden files.
-	
+
 	cd ~; ls -la
 
 ### Navigate to your home directory with a single command.
@@ -29,10 +29,10 @@ title: WDI - CLI Assessment (OSX)
 ### Navigate using relative paths (with prompt).
 
 	Rebeccas-MacBook-Pro:~ rebecca$ cd Desktop/Camera\ Backup/; cd ..
-	Rebeccas-MacBook-Pro:Desktop rebecca$ 
+	Rebeccas-MacBook-Pro:Desktop rebecca$
 
 ### Use tab completion.
 
 ### View the contents of files.
-	
+
 	less filename.ext
