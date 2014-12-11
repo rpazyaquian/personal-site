@@ -18329,10 +18329,8 @@ var ProjectCard = React.createClass({displayName: 'ProjectCard',
   render: function() {
     return (
       React.createElement("div", {className: "project-card"}, 
-        React.createElement("a", {href: this.props.card.projectUrl}, 
-          React.createElement("img", {src: this.props.card.imageUrl}), 
-          React.createElement("h2", null, this.props.card.title)
-        )
+        React.createElement("img", {src: this.props.card.imageUrl}), 
+        React.createElement("span", {className: "project-card-title"}, this.props.card.title)
       )
     );
   }
