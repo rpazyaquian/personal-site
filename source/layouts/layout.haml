@@ -9,7 +9,6 @@
     %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}
     %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
     = stylesheet_link_tag 'style'
-    = javascript_include_tag 'all'
     %script{src: "https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"}
 
 
@@ -18,3 +17,4 @@
     %div#content
       = yield
     = render_partial 'footer'
+    = javascript_include_tag 'all'
