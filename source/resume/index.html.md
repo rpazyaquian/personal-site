@@ -8,7 +8,7 @@ title: Resume
 
 ## Education
 
-**Web Development Immersive**
+**Web Development Immersive, September 2014 - December 2014**
 
 *General Assembly, Boston, MA*
 
@@ -37,6 +37,14 @@ Head developer on a primarily static, mobile-safe responsive [web page](http://w
 
 
 ## Personal Projects
+
+### [Combo Breaker](https://github.com/rpazyaquian/combo-breaker-api)
+
+An application for adding variety to your eating habits. This is a Rails-based API for the application database, a front-end heavy webapp for application logic is coming soon.
+
+### [ChipJS](https://github.com/rpazyaquian/chipjs)
+
+JavaScript implementation of a [CHIP-8](http://en.wikipedia.org/wiki/CHIP-8) machine, incorporating both interpreter logic and memory state.
 
 ### Stock Chart Lookup
 
