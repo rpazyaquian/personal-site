@@ -7,17 +7,17 @@ var projects = [
   {
     projectUrl: "#",
     imageUrl: "http://placehold.it/200x300",
-    title: "Placeholder"
+    title: "Placeholder Project"
   },
   {
     projectUrl: "#",
     imageUrl: "http://placehold.it/200x300",
-    title: "Placeholder"
+    title: "Placeholder Project"
   },
   {
     projectUrl: "#",
     imageUrl: "http://placehold.it/200x300",
-    title: "Placeholder"
+    title: "Placeholder Project"
   }
 ];
 
@@ -18328,10 +18328,16 @@ var React = require('react');
 var ProjectCard = React.createClass({displayName: 'ProjectCard',
   render: function() {
     return (
-      React.createElement("div", {className: "project-card"}, 
-        React.createElement("img", {src: this.props.card.imageUrl}), 
-        React.createElement("span", {className: "project-card-title"}, this.props.card.title)
-      )
+          React.createElement("figure", {className: "project-card"}, 
+            React.createElement("a", {href: this.props.card.projectUrl}, 
+              React.createElement("img", {src: this.props.card.imageUrl}), 
+              React.createElement("figcaption", {className: "project-card-overlay"}, 
+                React.createElement("span", {className: "project-card-title"}, 
+                  this.props.card.title
+                )
+              )
+            )
+          )
     );
   }
 });
