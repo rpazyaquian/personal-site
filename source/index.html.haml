@@ -2,40 +2,22 @@
 title: Rebecca Paz
 ---
 
-%div.container
-	%div.col-md-6.col-md-offset-3
-		%h1 Rebecca Paz-Yaquian
-		%section
-			%ul.nav.nav-pills
-				%li{role: "presentation", class: "home-pill dropdown"}
-					%a{"class" => 'dropdown-toggle', "data-toggle" => 'dropdown', "href" => '#' }
-						References I Like
-						%span.caret
-					%ul.dropdown-menu
-						%li
-							= link_to "Scalable and Modular Architecture in CSS", "http://smacss.com/book/"
-						%li
-							= link_to "Eloquent Javascript", "http://eloquentjavascript.net/"
-						%li
-							= link_to "Javascript Garden", "http://bonsaiden.github.io/JavaScript-Garden/"
-						%li
-							= link_to "Backbone Fundamentals", "http://addyosmani.github.io/backbone-fundamentals/"
-						%li
-							= link_to "Learn to Program", "https://pine.fm/LearnToProgram/"
-				%li.dropdown
-					%a{"class" => 'dropdown-toggle', "data-toggle" => 'dropdown', "href" => '#' }
-						Blog Posts
-						%span.caret
-					%ul.dropdown-menu
-						- sub_pages('blog').each do |resource|
-							- if resource.data.title && resource.data.title != 'My Blog'
-								%li
-									= link_to resource.data.title, resource.url
-				%li
-					= link_to "Resume", "/resume"
-				%li
-					%a{href: "https://github.com/rpazyaquian"}
-						%i{class: "fa fa-3x fa-github"}
-				%li
-					%a{href: "https://www.linkedin.com/pub/rebecca-paz/4a/711/b40"}
-						%i{class: "fa fa-3x fa-linkedin"}
+%section
+	%p
+		My big ol' blurb about being smart, flexible, adaptable, and a quick learner. Also what I like and what I've done.
+	%div.projects
+		%p
+			Project cards go here!
+	%p
+		Also, here's a list of resources I like!
+		%ul.dropdown-menu
+			%li
+				= link_to "Scalable and Modular Architecture in CSS", "http://smacss.com/book/"
+			%li
+				= link_to "Eloquent Javascript", "http://eloquentjavascript.net/"
+			%li
+				= link_to "Javascript Garden", "http://bonsaiden.github.io/JavaScript-Garden/"
+			%li
+				= link_to "Backbone Fundamentals", "http://addyosmani.github.io/backbone-fundamentals/"
+			%li
+				= link_to "Learn to Program", "https://pine.fm/LearnToProgram/"
