@@ -4,6 +4,20 @@ title: Resume
 
 # Rebecca Paz
 
+
+
+## Education
+
+**Web Development Immersive**
+
+*General Assembly, Boston, MA*
+
+**Bachelors of Science, Biomedical Engineering, August 2008 - October 2012**
+
+*Worcester Polytechnic Institute, Worcester, MA*
+
+
+
 ## Work Experience
 
 ### Developer Apprentice, June 2014 - August 2014
@@ -20,16 +34,7 @@ Head developer on a primarily static, mobile-safe responsive [web page](http://w
 * Heavily customized the [Foundation framework](http://foundation.zurb.com/) for a personalized, responsive experience
 * Collaborated with head designers on implementation and reworking of site design
 
-## Technical Skills
 
-### Back-End Development
-
-* Ruby, Rails
-* Python, Flask, Django
-
-### Front-End Development
-* Javascript, Backbone, Angular, Ember
-* Foundation, Bootstrap
 
 ## Personal Projects
 
@@ -41,8 +46,15 @@ Stock symbol lookup and chart renderer deployed via Heroku. Offers tabbed charts
 
 Application for keeping track of job applications that a user has submitted. Written in Django.
 
-## Education
 
-**Bachelors of Science, Biomedical Engineering, August 2008 - October 2012**
 
-*Worcester Polytechnic Institute, Worcester, MA*
+## Technical Skills
+
+### Back-End Development
+
+* Ruby, Rails
+* Python, Flask, Django
+
+### Front-End Development
+* Javascript, Backbone, Angular, Ember
+* Foundation, Bootstrap
