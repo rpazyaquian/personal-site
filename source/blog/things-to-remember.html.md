@@ -1,0 +1,23 @@
+# Things to Do/Check Before Deploying!
+
+- Caching of slow things
+- Serve static assets via cloudfront/cdn
+- Implement unicorn or puma
+- Use New Relic to keep heroku awake
+- Load testing
+- Check for n+1 queries
+- Proper indexing
+- Don’t scale images in HTML
+- Validate user input
+- Update ReadMe
+- Comment weird code
+- Registered domain name
+- Make a favicon
+- Use good titles on pages
+- Social login, e.g. Facebook
+- Contact info
+- Better error 404 pages
+- Google analytics/web master tools
+- metric fu
+- Accessibility assessment
+- Mobile display
