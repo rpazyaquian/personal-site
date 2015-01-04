@@ -21,3 +21,4 @@
 
 # Ignore the Javascript packaging workfolder
 /source/js-build
+/js-build

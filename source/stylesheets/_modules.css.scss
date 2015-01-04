@@ -1,14 +1,22 @@
-.name, .main-section {
+@import url("http://fonts.googleapis.com/css?family=Numans");
+
+$navbar-font: "Numans", sans-serif;
+
+.name, .main-section, .nav, .project-card-list {
   text-align: center;
 }
 
 .nav, .project-card-list {
-  text-align: center;
   padding-left: 0;
 }
 
-.nav-link, {
+.profile-blurb {
+  font-size: 26px;
+}
+
+.nav-link {
   display: inline-block;
+  font-family: $navbar-font;
 }
 
 .project-card-list > li {
@@ -39,4 +47,12 @@
   display: inline-block;
   padding: 10px;
   margin: 0px;
+}
+
+.blog-post {
+
+}
+
+.blog-posts {
+  list-style: none
 }
