@@ -1,3 +1,7 @@
+---
+title: React
+---
+
 # React
 
 I've delved into [React](http://facebook.github.io/react/), Facebook's UI library, and I'm rather fond of it. It works somewhat differently than other approaches to UI in it creates *components* and only **ever** components, it employs *one-way data binding*, and it separates the concepts of *properties and state*. These two things are, in my opinion, what really set React apart and make it an intuitive and agreeable framework.
@@ -8,7 +12,7 @@ All you need to do with React is to express how your app looks at any given time
 
 ## The Component
 
-The basic building block of React is the component. A component is like a function that takes in *properties* and *state*, and returns HTML.
+The basic building block of React is the component. A component is like a function that takes in *properties*, and returns *state* and HTML.
 
 Components are declared like this:
 

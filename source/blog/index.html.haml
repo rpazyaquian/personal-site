@@ -3,12 +3,6 @@ title: Blog
 ---
 
 %ul.blog-posts
-  %li
-    %article.blog-post
-      = partial 'blog/react'
-  %li
-    %article.blog-post
-      = partial 'blog/react-component-lifecycle'
-  %li
-    %article.blog-post
-      = partial 'blog/things-to-remember'
+  - articles.each do |article|
+    %li
+      = link_to article.data.title, article

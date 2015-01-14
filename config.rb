@@ -62,7 +62,7 @@ helpers do
   def articles
 
     sitemap.resources.select do |resource|
-      (resource.path.start_with?('blog'))
+      (resource.path.start_with?('blog') && !resource.source_file.include?('index'))
     end
 
   end

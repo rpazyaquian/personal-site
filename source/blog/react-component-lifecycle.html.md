@@ -1,3 +1,7 @@
+---
+title: React Component Life Cycle
+---
+
 # React Component Life Cycle
 
 Ever run into a problem where you want your component to render something, but that something needs a DOM node before it works? If you've ever tried to, for example, render a Google Map object in the `render` method of a React class, you've probably noticed that it won't work.
